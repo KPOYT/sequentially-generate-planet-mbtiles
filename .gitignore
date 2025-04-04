@@ -3,3 +3,4 @@ data
 main
 bin
 .vscode
+.DS_Store

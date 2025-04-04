@@ -21,23 +21,28 @@ var gh repos
 func cloneRepos() {
 	gh = repos{
 		gdal: git.Repo{
-			Url: "https://github.com/lambdajack/gdal",
+			Url: "https://github.com/KPOYT/gdal",
+			Tag: "v3.6.5",
 			Dst: filepath.Join(pth.temp, "gdal"),
 		},
 		osmiumTool: git.Repo{
-			Url: "https://github.com/lambdajack/osmium-tool",
+			Url: "https://github.com/KPOYT/osmium-tool",
+			Tag: "v1.14.0",
 			Dst: filepath.Join(pth.temp, "osmium", "osmium-tool"),
 		},
 		libosmium: git.Repo{
-			Url: "https://github.com/lambdajack/libosmium",
+			Url: "https://github.com/KPOYT/libosmium",
+			Tag: "v2.18.0",
 			Dst: filepath.Join(pth.temp, "osmium", "libosmium"),
 		},
 		tilemaker: git.Repo{
-			Url: "https://github.com/lambdajack/tilemaker",
+			Url: "https://github.com/KPOYT/tilemaker",
+			Tag: "v2.4.0",
 			Dst: filepath.Join(pth.temp, "tilemaker"),
 		},
 		tippecanoe: git.Repo{
-			Url: "https://github.com/lambdajack/tippecanoe",
+			Url: "https://github.com/KPOYT/tippecanoe",
+			Tag: "1.37.0",
 			Dst: filepath.Join(pth.temp, "tippecanoe"),
 		},
 	}

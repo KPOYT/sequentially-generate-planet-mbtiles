@@ -47,7 +47,7 @@ func Generate(src, dst string, tippecanoe *docker.Container, elg, plg, rlg *log.
 
 	rlg.Println("merging: ", strings.ReplaceAll(strings.Join(b, " "), "/data/", "..."))
 
-	err = tippecanoe.Execute(append([]string{"tile-join", "--force", "--output=/merged/planet.mbtiles"}, b...))
+	err = tippecanoe.Execute(append([]string{"tile-join", "--force", "--no-tile-size-limit", "--output=/merged/planet.mbtiles"}, b...))
 	if err != nil {
 		elg.Fatalf("failed to merge mbtiles: %v", err)
 	}
