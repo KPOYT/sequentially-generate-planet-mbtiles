@@ -8,6 +8,7 @@ import (
 
 type Repo struct {
 	Url string
+	Tag string
 	Dst string
 }
 
@@ -24,6 +25,16 @@ func (r Repo) Clone() error {
 		return err
 	}
 	cmd.Wait()
+
+	if r.Tag != "" {
+		cmd = exec.Command("git", "-C", r.Dst, "checkout", "tags/"+r.Tag)
+		cmd.Stdout = os.Stdout
+		cmd.Stderr = os.Stderr
+		if err := cmd.Run(); err != nil {
+			return err
+		}
+		cmd.Wait()
+	}
 
 	return nil
 }

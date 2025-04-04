@@ -124,7 +124,7 @@ func getRam() uint64 {
 	f, err := os.Open("/proc/meminfo")
 	if err != nil {
 		log.Printf("Unable to open /proc/meminfo: %s", err)
-		memTotalKb = 4096 * 1024
+		memTotalKb = 65536 * 1024
 	} else {
 		defer f.Close()
 
