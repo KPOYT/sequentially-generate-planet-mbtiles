@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/lambdajack/lj_go/pkg/lj_json"
+	"github.com/KPOYT/lj_go/pkg/lj_json"
 )
 
 type configuration struct {

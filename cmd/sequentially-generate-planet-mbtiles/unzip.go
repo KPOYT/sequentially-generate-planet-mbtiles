@@ -4,7 +4,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/lambdajack/lj_go/pkg/lj_archive"
+	"github.com/KPOYT/lj_go/pkg/lj_archive"
 )
 
 type unzipInformation struct {
