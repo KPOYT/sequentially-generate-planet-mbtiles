@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/lambdajack/lj_go/pkg/lj_http"
+	"github.com/KPOYT/lj_go/pkg/lj_http"
 )
 
 type downloadInformation struct {
