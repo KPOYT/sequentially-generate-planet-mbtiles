@@ -37,7 +37,7 @@ func cloneRepos() {
 		},
 		tilemaker: git.Repo{
 			Url: "https://github.com/KPOYT/tilemaker",
-			Tag: "v2.4.0",
+			Tag: "v3.0.1",
 			Dst: filepath.Join(pth.temp, "tilemaker"),
 		},
 		tippecanoe: git.Repo{
